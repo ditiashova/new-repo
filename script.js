@@ -1,9 +1,3 @@
-/**
- * Created by INNA on 03.04.2017.
- */
-/*model*/
-/*view*/
-/*control*/
 ($('.carousel').carousel({
     interval: 2000
 })
