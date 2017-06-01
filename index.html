@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Online Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="http://www.iconsplace.com/download/pink-letter-a-512.jpg">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+</head>
+<body>
+    <main class="vertical-box centered-element">
+        <header class="vertical-box">
+            <section id="header-first" class="horizontal-box">
+                <div class="horizontal-box">
+                    <ul class="ul-without-start-padding">
+                        <li class="padding-right">
+                            <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                               Email : info@liberty.co.uk
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                               Phone : (+84) 4567 421 978
+                        </li>
+                    </ul>
+                </div>
+                <div class="horizontal-box">
+                    <ul class="ul-without-start-padding">
+                        <li class="padding-right">
+                            USD
+                            <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            | <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                                My account
+                            <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="divider horizontal-box"></div>
+            <section id="header-second" class="horizontal-box">
+                <div id="logo-and-menu" class="horizontal-box">
+                    <div id="logo" class="padding-right">
+                        <a href="#">simolux.</a>
+                    </div>
+                    <div id="menu">
+                        <ul class="ul-without-start-padding">
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">FEATURED</a>
+                            </li>
+                            <li>
+                                <a href="#">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="#">MEN</a>
+                            </li>
+                            <li>
+                                <a href="#">ACCESSORIES</a>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="#">BLOG</a>
+                            </li>
+                            <li>
+                                <a href="#">CONTACT</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="shop-and-search" class="horizontal-box">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-search"aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        | <i class="glyphicon glyphicon-shopping-cart"aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+        </header>
+        <div id="firstCarousel" class="carousel slide" data-ride="carousel" data-pause="hover">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="http://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/slide1_image.jpg?14366963195442213923" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                        <div class="content-on-slider">
+                            <div class="text-on-slider">
+                                <h1 class="without-margin">Beauty Winter</h1>
+                                <h4>Put winter behind you and...</h4>
+                            </div>
+                            <div class="button-on-slider">
+                                <button class="btn btn-circle">SHOP WINTER<br/>ARRIVALS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/slide2_image.jpg?14366963195442213923" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                        <div class="content-on-slider">
+                            <div class="text-on-slider">
+                                <h1 class="without-margin">Beauty Winter</h1>
+                                <h4>Put winter behind you and...</h4>
+                            </div>
+                            <div class="button-on-slider">
+                                <button class="btn btn-circle">SHOP WINTER<br/>ARRIVALS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="benefits" class="horizontal-box">
+            <div  class="vertical-box benefit">
+                <div id="benefit-1" class="centered-element">
+                    <h3>
+                        <i class="glyphicon glyphicon-usd" aria-hidden="true"></i>
+                    </h3>
+                    <b>100% MONEY BACK</b>
+                    <br/>
+                    GUARANTEE
+                </div>
+            </div>
+            <div  class="vertical-box benefit">
+                <div id="benefit-2" class="centered-element">
+                    <h3><i class="glyphicon glyphicon-send" aria-hidden="true"></i></h3>
+                    <b>FREE SHIPPING ALL PRODUCTS</b><br/>
+                    ON OVER ORDER $500.00
+                </div>
+            </div>
+            <div  class="vertical-box benefit">
+                <div id="benefit-3" class="centered-element">
+                    <h3>
+                        <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                    </h3>
+                    <b>ALWAYS SUPPORT</b>
+                    <br/>
+                    SUPPORT 24/7
+                </div>
+            </div>
+        </section>
+        <section id="top-designs" class="vertical-box">
+            <h3>
+                <b>TOP DESIGN</b>
+            </h3>
+            The standard chunk of Lorem Ipsum used since the 1500s
+            <div class="horizontal-box clothes-row">
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <div class="relative">
+                            <img src="//cdn.shopify.com/s/files/1/1204/0390/products/30_grande.jpg?v=1458926136">
+                            <div class="product-action vertical-box ">
+                                <div class="vertical-box centered-element action-items">
+                                    <a href="#">
+                                        <div class="action-item vertical-box centered-element">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="action-item vertical-box centered-element">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="action-item vertical-box centered-element">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>BOHEMIAN PRINTED DRESS</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                            From <h4>$26.00</h4>
+                        </div>
+                            <div class="stars">
+                            <fieldset class="rating">
+                                <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                <input type="radio"  name="rating" value="3 and a half" /><label class="half"  title="Meh - 3.5 stars"></label>
+                                <input type="radio"  name="rating" value="3" /><label class = "full"  title="Meh - 3 stars"></label>
+                                <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio"  name="rating" value="2" /><label class = "full"  title="Kinda bad - 2 stars"></label>
+                                <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <div class="relative">
+                            <img src="//cdn.shopify.com/s/files/1/1204/0390/products/27_grande.jpg?v=1458926193">
+                                <div class="product-action vertical-box ">
+                                <div class="vertical-box centered-element action-items">
+                                    <a href="#">
+                                        <div class="action-item vertical-box centered-element">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="action-item vertical-box centered-element">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="action-item vertical-box centered-element">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>COZY YOGA STYLE SWEATPANTS</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$571.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full"  title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half"  title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full"  title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <div class="relative">
+                            <img src="//cdn.shopify.com/s/files/1/1204/0390/products/28_grande.jpg?v=1458926248">
+                            <div class="product-action vertical-box ">
+                                <div class="vertical-box centered-element action-items">
+                                    <a href="#"><div class="action-item vertical-box centered-element">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div></a>
+                                    <a href="#"><div class="action-item vertical-box centered-element">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </div></a>
+                                    <a href="#"><div class="action-item vertical-box centered-element">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>CROCHET LACE DRESS</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                From <h4>$36.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full" title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half"  title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full"  title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full"  title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <div class="relative">
+                            <img src="https://cdn.shopify.com/s/files/1/1204/0390/products/34_grande.jpg?v=1458926273">
+                            <div class="product-action vertical-box ">
+                            <div class="vertical-box centered-element action-items">
+                                <a href="#">
+                                    <div class="action-item vertical-box centered-element">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="action-item vertical-box centered-element">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="action-item vertical-box centered-element">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        <h4>ECOSMART FLEECE HOODIE</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$271</h4> <s>$290</s>
+                            </div>
+                            <div class="stars">
+                            <fieldset class="rating">
+                                <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                <input type="radio" name="rating" value="4 and a half" /><label class="half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                <input type="radio"  name="rating" value="3 and a half" /><label class="half"  title="Meh - 3.5 stars"></label>
+                                <input type="radio"  name="rating" value="3" /><label class = "full"  title="Meh - 3 stars"></label>
+                                <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio"  name="rating" value="2" /><label class = "full"  title="Kinda bad - 2 stars"></label>
+                                <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                        </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="divider horizontal-box"></div>
+        <section id="what-to-wear-ideas" class="vertical-box">
+            <h3>
+                <b>WHAT SHOULD YOU WEAR TODAY?</b>
+            </h3>
+            The standard chunk of Lorem Ipsum used since the 1500s
+            <div class="horizontal-box" id="ideas-manager">
+                <div class="vertical-box wear-idea centered-element">
+                    <a href="#">
+                        <div class="wear-ideas">
+                            <img src="//cdn.shopify.com/s/files/1/1204/0390/t/16/assets/bnl1.jpg?14366963195442213923">
+                        </div>
+                        <h4>
+                            <b>SOMETHING BROWNED</b>
+                        </h4>
+                        T-SHIRT & DRESS
+                    </a>
+                </div>
+                <div class="vertical-box wear-idea centered-element">
+                    <div class="vertical-box centered-element">
+                        <a href="#">
+                            <div class="wear-ideas">
+                                <img src="//cdn.shopify.com/s/files/1/1204/0390/t/16/assets/bnl2.jpg?14366963195442213923">
+                            </div>
+                            <h4><b>ELLIE SAAB</b></h4>
+                            HAUTE COUTURE FASHION
+                        </a>
+                    </div>
+                    <div class="vertical-box centered-element">
+                        <a href="#">
+                            <div class="wear-ideas">
+                                <img src="//cdn.shopify.com/s/files/1/1204/0390/t/16/assets/bnl3.jpg?14366963195442213923">
+                            </div>
+                            <h4><b>ALEXANDER MCQUEEN</b></h4>
+                            SPECIAL SHOES
+                        </a>
+                    </div>
+                </div>
+                <div class="vertical-box wear-idea centered-element">
+                    <a href="#">
+                        <div class="wear-ideas">
+                            <img src="//cdn.shopify.com/s/files/1/1204/0390/t/16/assets/bnl4.jpg?14366963195442213923">
+                        </div>
+                        <h4><b>NEW LOOK</b></h4>
+                        CLUTCH BAGS FOR PARTY
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="deal-of-the-week" class="horizontal-box">
+            <div class="horizontal-box">
+                <div class="centered-element special-offer">
+                    <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/deal.jpg?14366963195442213923">
+                </div>
+                <div class="vertical-box special-offer">
+                    <div id="special-offer-text">
+                        <h3>DEALS OF THE WEEK</h3>
+                        <h2><b>BOHEMIAN PRINTED DRESS</b></h2>
+                        There are many variations of passages of Lorem Ipsum available, but the on majority have suffered alteration in some form, by injected humour, or rannn domised words which don't look even slightly believable. If you are going too use a passage of Lorem Ipsum, you need to be sure there isn't anything .
+                    </div>
+                    <div id="special-offer-price-tag">
+                        <div class="stars horizontal-box centered-element">
+                            <fieldset class="centered-element rating">
+                                <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                        </div>
+                        <h1 class="centered-element">$26.00</h1>
+                        <button class="btn btn-default btn-lg">
+                            ADD TO CART
+                        </button>
+                    </div>
+                    <div class="horizontal-box" id="special-countdown">
+                        <div class="vertical-box centered-element">
+                            <div id="days" class="counter">238</div>
+                            <span class="counter-text">DAYS</span>
+                        </div>
+                        <div class="vertical-box centered-element">
+                            <div id="hours" class="counter">20</div>
+                            <span class="counter-text">HOURS</span>
+                        </div>
+                        <div class="vertical-box centered-element">
+                            <div id="minutes" class="counter">08</div>
+                            <span class="counter-text">MIN</span>
+                        </div>
+                        <div class="vertical-box centered-element">
+                            <div id="seconds" class="counter">38</div>
+                            <span class="counter-text">SEC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featured" class="vertical-box">
+            <h2>FEATURED | NEW ARRIVALS | TOP SALE</h2>
+            The standard chunk of Lorem Ipsum used since the 1500s
+            <div class="horizontal-box centered-element clothes-row">
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/18_e1a70da6-3bb8-460f-8921-e78d8388f0fa_grande.jpg?v=1458933729"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price"><h4>$26.00</h4></div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half"  title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full"  title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/12_1e38dace-a962-4043-872d-9e985ff744ad_grande.jpg?v=1458936986"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$26.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/19_ab2ee158-00d7-4eb5-8124-26d9fc52e4b7_grande.jpg?v=1458933865"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$26.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/36_grande.jpg?v=1458936266"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$26.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full"  title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full" title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="horizontal-box centered-element clothes-row">
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/10_grande.jpg?v=1458933994"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price"><h4>$26.00</h4></div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/38_grande.jpg?v=1458930452"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$26.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/5_5fb1ed7d-f0e3-4baa-b83e-147c6acf2798_grande.jpg?v=1458936160"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$26.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half"  title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full"  title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full"  title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/products/2_3ee7c690-ae68-4658-91d6-421c0a6fbfc4_grande.jpg?v=1458935419"/>
+                        <h4>HEATHER SHIRT WITH LEATHER</h4>
+                        <div class="horizontal-box price-tag">
+                            <div class="price">
+                                <h4>$26.00</h4>
+                            </div>
+                            <div class="stars">
+                                <fieldset class="rating">
+                                    <input type="radio" name="rating" value="5" /><label class = "full" title="Awesome - 5 stars"></label>
+                                    <input type="radio" name="rating" value="4 and a half" /><label class="half"  title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" name="rating" value="4" /><label class = "full"  title="Pretty good - 4 stars"></label>
+                                    <input type="radio"  name="rating" value="3 and a half" /><label class="half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio"  name="rating" value="3" /><label class = "full" title="Meh - 3 stars"></label>
+                                    <input type="radio" name="rating" value="2 and a half" /><label class="half"  title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio"  name="rating" value="2" /><label class = "full" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio"  name="rating" value="1 and a half" /><label class="half"  title="Meh - 1.5 stars"></label>
+                                    <input type="radio" name="rating" value="1" /><label class = "full"  title="Sucks big time - 1 star"></label>
+                                    <input type="radio" name="rating" value="half" /><label class="half"  title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="blog-feed" class="vertical-box">
+            <h2>LATEST BLOG</h2>
+            The standard chunk of Lorem Ipsum used since the 1500s
+            <div class="horizontal-box centered-element clothes-row">
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/articles/02_large.jpg?v=1458727272"/>
+                        <div class="blog-description">
+                            <div class="post-date">
+                                <i class="glyphicon glyphicon-time"></i>11 March 2017
+                            </div>
+                            <div class="post-description">
+                                <h3>HOW TO MAKE YOUR FIRST 10 SALES</h3>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            </div>
+                            <div class="post-comments">
+                                <i class="glyphicon glyphicon-send"></i> 5 COMMENTS
+                            </div>
+                            <button class="btn btn-lg">
+                                READ MORE
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/articles/02_large.jpg?v=1458727272"/>
+                        <div class="blog-description">
+                            <div class="post-date">
+                                <i class="glyphicon glyphicon-time"></i>11 March 2017
+                            </div>
+                            <div class="post-description">
+                                <h3>HOW TO MAKE YOUR FIRST 10 SALES</h3>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            </div>
+                            <div class="post-comments">
+                                <i class="glyphicon glyphicon-send"></i> 5 COMMENTS
+                            </div>
+                            <button class="btn btn-lg">
+                                READ MORE
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="vertical-box clothes-item">
+                    <a href="#">
+                        <img src="//cdn.shopify.com/s/files/1/1204/0390/articles/02_large.jpg?v=1458727272"/>
+                        <div class="blog-description">
+                            <div class="post-date">
+                                <i class="glyphicon glyphicon-time"></i>11 March 2017
+                            </div>
+                            <div class="post-description">
+                                <h3>HOW TO MAKE YOUR FIRST 10 SALES</h3>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            </div>
+                            <div class="post-comments">
+                                <i class="glyphicon glyphicon-send"></i> 5 COMMENTS
+                            </div>
+                            <button class="btn">
+                                READ MORE
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="divider horizontal-box"></div>
+        <section id="partners" class="horizontal-box">
+            <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/brc_1.png?14366963195442213923"/>
+            <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/brc_2.png?14366963195442213923"/>
+            <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/brc_3.png?14366963195442213923"/>
+            <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/brc_4.png?14366963195442213923"/>
+            <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/brc_5.png?14366963195442213923"/>
+            <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/brc_6.png?14366963195442213923"/>
+        </section>
+        <div class="divider horizontal-box"></div>
+        <section id="subscribe" class="vertical-box centered-element">
+            <div class="centered-element">
+                <h3>GET THE LATEST FROM SIMOLUX STORE</h3>
+                Sign up for newsletter
+                <div id="subscribe-form" class="horizontal-box centered-element">
+                    <input type="text" name="e-mail" value="Your e-mail">
+                    <button class="btn btn-lg">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="divider horizontal-box"></div>
+        <footer class="horizontal-box">
+            <div>Copyright © 2017, Simolux. Powered by Shopify</div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/payment.png?14366963195442213923"/>
+                <img src="https://cdn.shopify.com/s/files/1/1204/0390/t/16/assets/payment.png?14366963195442213923"/>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

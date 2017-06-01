@@ -1,0 +1,326 @@
+html {box-sizing: border-box; background:whitesmoke;}
+*, *:before, *:after {box-sizing: inherit;}
+h1 {font-size: 60px;}
+.without-margin {margin-left: 0px;}
+body {background: white;font-family: 'Titillium Web', sans-serif;font-size: 14px;font-weight: 400;}
+main {width: 80%;}
+.vertical-box {display: flex;flex-flow: column;}
+.horizontal-box {display: flex;flex-flow: row;}
+.centered-element {margin: auto;text-align: center;}
+.divider {
+    margin: 0 0 20px 0;
+    height: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.ul-without-start-padding {
+    -webkit-padding-start: 0px;
+}
+#header-first,
+#header-second {
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+ul > li {
+    display: inline;
+}
+i {
+    padding: 0 4px 0 4px;
+}
+#shop-and-search i {
+    padding: 0 10px;
+}
+a {
+    color: darkslategrey;
+}
+#logo a {
+    flex: 1; font-size: 36px; font-weight: 700;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+.padding-right {
+    padding-right: 14px;
+}
+#header-first {
+    margin-top: 20px;
+}
+#header-second,
+#logo-and-menu {
+    align-items: baseline;
+}
+#logo-and-menu {
+    flex: 2;
+}
+#menu ul > li{
+    padding: 0 16px;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+}
+.carousel-caption {
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 10%;
+    text-align: left;
+}
+.button-on-slider button {
+    margin-top: 24px;
+    background-color: #ff8289;
+}
+.btn-circle {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 50%;
+}
+#navigation-slider-dots {
+    font-size: 6px;
+    color: white;
+}
+#benefits {
+    justify-content: space-around;
+    margin: 25px 0 35px 0;
+}
+#benefits {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.benefit {
+    flex: 1;
+    padding-bottom: 20px;
+}
+.benefit:nth-of-type(1),
+.benefit:nth-of-type(2) {
+    border-right: 1px solid gainsboro;
+}
+#top-designs {
+    margin-bottom: 20px;
+}
+.clothes-row {
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.clothes-item {
+    flex: 1;
+    margin: 10px 20px 10px 0;
+}
+.clothes-item:last-of-type {
+    margin-right: 0;
+}
+.clothes-item img,
+#partners img {
+    width: 100%;
+}
+.relative {
+    position: relative;
+}
+.hidden {
+    visibility: hidden;
+}
+.product-action {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(105, 105, 105, 0.5);
+}
+.wear-ideas {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.wear-ideas:hover img {
+    opacity: 0.8;
+    transition: opacity 400ms;
+}
+.wear-ideas:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 400ms;
+}
+.visible {
+    visibility: visible;
+}
+.action-item {
+    padding: 20px;
+    color: white;
+    border: 1px solid white;
+    flex: 1;
+    margin: 10px;
+}
+.price-tag  {
+    justify-content: space-between;
+    align-items: center;
+}
+.price h4 {
+    display: inline;
+}
+.clothes-item {
+    text-align: left;
+}
+.wear-idea {
+    flex: 1;
+    margin: 10px 20px 10px 0;
+    justify-content: space-between;
+}
+.wear-idea:last-of-type {
+    margin-right: 0;
+}
+.wear-idea img {
+    width: 100%;
+}
+#ideas-manager {
+    margin: 20px 0 20px 0;
+}
+section#deal-of-the-week {
+    background-color: #f5e0c3;
+    margin: 20px 0;
+}
+section#deal-of-the-week > div{
+    border: 1px solid white;
+    margin: 20px;
+}
+section#deal-of-the-week img {
+    width: 100%;
+    margin: 0 10px 0 0;
+}
+.special-offer {
+    flex:1;
+    align-content: flex-end;
+}
+#special-offer-text,
+#special-offer-price-tag {
+    padding: 20px;
+}
+#special-offer-price-tag button {
+    background-color: #ff8289;
+    color: white;
+    margin: 15px;
+    padding: 15px 25%;
+    border-radius: 0px;
+    border-color: transparent;
+}
+#blog-feed button,
+#subscribe button {
+    background-color: #ff8289;
+    color: white;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    border-radius: 0px;
+    border-color: transparent;
+}
+#special-countdown {
+    justify-content: space-around;
+}
+#special-countdown > li {
+    display: inline-block;
+}
+.counter {
+    padding: 20px;
+    background-color: white;
+}
+.counter-text {
+    padding: 10px 0;
+}
+.post-date,
+.post-description,
+.post-comments {
+    text-align: left;
+    padding: 10px 0;
+}
+#partners {
+    justify-content: space-around;
+}
+#subscribe {
+    margin: 20px 0;
+    height: 50vh;
+    background-color: #ebe2e7;
+}
+#subscribe-form {
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+#subscribe-form input,
+#subscribe-form button {
+    height: 50px;
+}
+#subscribe-form input {
+    padding-left: 10px;
+    border: transparent;
+    flex: 2;
+}
+#subscribe-form button {
+    flex:1;
+}
+footer {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/*STARS*/
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 2px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
